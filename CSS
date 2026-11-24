@@ -1,0 +1,477 @@
+
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8faff;
+    color: #26364a;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: white;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+}
+
+.logo {
+    color: #123d70;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span,
+footer span {
+    color: #d9a441;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #26364a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #d9a441;
+}
+
+.nav-btn,
+.primary-btn {
+    background-color: #123d70;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.nav-btn:hover,
+.primary-btn:hover {
+    background-color: #d9a441;
+    color: #123d70;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 75px 7%;
+    background-color: #edf4fc;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tagline {
+    color: #b3832f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    color: #123d70;
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    color: #66758a;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    border: 2px solid #123d70;
+    color: #123d70;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Statistics */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #123d70;
+    color: white;
+    padding: 35px 7%;
+    text-align: center;
+}
+
+.stat-box h2 {
+    color: #e5b754;
+    font-size: 32px;
+}
+
+.stat-box p {
+    font-size: 14px;
+}
+
+/* Common Sections */
+.section {
+    padding: 75px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2,
+.about-content h2,
+.admission-content h2 {
+    color: #123d70;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+/* About */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image,
+.about-content {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-content p:not(.tagline) {
+    color: #66758a;
+    margin-bottom: 18px;
+}
+
+/* Courses */
+.courses {
+    background-color: #edf4fc;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.course-card {
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-7px);
+}
+
+.course-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.course-card h3 {
+    color: #123d70;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #66758a;
+    margin-bottom: 15px;
+}
+
+.course-card a {
+    color: #b3832f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Facilities */
+.facility-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.facility-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    padding-bottom: 20px;
+}
+
+.facility-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.facility-card h3 {
+    color: #123d70;
+    padding: 15px 18px 5px;
+}
+
+.facility-card p {
+    padding: 0 18px;
+    color: #66758a;
+}
+
+/* Admission Process */
+.admission-info {
+    background-color: #edf4fc;
+}
+
+.process-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.process-card {
+    background: white;
+    padding: 25px 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.process-card span {
+    display: inline-block;
+    background: #123d70;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.process-card h3 {
+    color: #123d70;
+    margin-bottom: 10px;
+}
+
+.process-card p {
+    color: #66758a;
+    font-size: 14px;
+}
+
+/* Admission Form */
+.admission {
+    background-color: #123d70;
+    text-align: center;
+    color: white;
+}
+
+.admission-content h2 {
+    color: white;
+}
+
+.admission-content > p:not(.tagline) {
+    color: #d8e4f1;
+}
+
+.admission-form {
+    max-width: 650px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.admission-form input,
+.admission-form select {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.admission-form button {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #e5b754;
+    color: #123d70;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admission-form button:hover {
+    background-color: white;
+}
+
+.demo-note {
+    color: #d8e4f1;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+/* Contact */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-card h3 {
+    color: #123d70;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #0b294c;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer-note {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #cbd9e8;
+}
+
+/* Responsive Design */
+@media (max-width: 950px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .process-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero,
+    .about {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        height: 250px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .course-container,
+    .facility-container,
+    .contact-container,
+    .process-container {
+        grid-template-columns: 1fr;
+    }
+
+    .admission-form {
+        grid-template-columns: 1fr;
+    }
+
+    .admission-form button {
+        grid-column: span 1;
+    }
+
+    .section {
+        padding: 50px 5%;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .admission-content h2 {
+        font-size: 27px;
+    }
+}
